@@ -1,0 +1,11 @@
+import { useIsMobile } from "@/hooks/use-mobile";
+
+function App() {
+  const isMobile = useIsMobile();
+
+  return (
+    <div className={isMobile ? "p-2" : "p-8"}>
+      {/* conteúdo */}
+    </div>
+  );
+}
